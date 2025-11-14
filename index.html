@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MUGE_SMOKE-GAME</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎮 MUGE_SMOKE-GAME — เกมรณรงค์เลิกบุหรี่</h1>
+
+  <div class="stats">
+    <div>❤️ สุขภาพ: <span id="healthVal">80</span></div>
+    <input type="range" id="health" min="0" max="100" value="80">
+    <div>🧠 ความเครียด: <span id="mindVal">30</span></div>
+    <input type="range" id="mind" min="0" max="100" value="30">
+    <div>🔥 ความอยากสูบ: <span id="cravingVal">40</span></div>
+    <input type="range" id="craving" min="0" max="100" value="40">
+    <div>🌱 แรงจูงใจ: <span id="motivationVal">50</span></div>
+    <input type="range" id="motivation" min="0" max="100" value="50">
+  </div>
+
+  <h2>เลือกกิจกรรม 3 ต่อวัน</h2>
+  <div id="choices"></div>
+
+  <button id="confirmDay">ยืนยันวัน</button>
+  <button id="nextDay">วันถัดไป</button>
+  <button id="saveBtn">บันทึกสถานะ</button>
+  <button id="resetBtn">รีเซ็ตเกม</button>
+
+  <h3>สรุปวัน</h3>
+  <div id="daySummary"></div>
+
+  <h3>Challenges</h3>
+  <ul id="chList"></ul>
+
+  <h3>Badges</h3>
+  <div id="badges"></div>
+  <button id="showBadges">ดู badges</button>
+  <button id="btnNewGame">เริ่มเกมใหม่</button>
+  <button id="btnLoad">โหลดสถานะ</button>
+
+  <h3>Log</h3>
+  <div id="log" class="log"></div>
+
+  <script src="game.js"></script>
+</body>
+</html>
